@@ -3,8 +3,172 @@
     <title>Elson's Profile</title>
   </head>
   <body>
-    <div class="heading-container" style="text-align: center;">
-      <h1 style="margin-top: 25px; font-size: 50px; font-family: cursive;"> Welcome To Elson's Profile </h1>
+
+    <div class="heading-container" style="background: url('https://media.istockphoto.com/photos/blue-sky-and-white-clouds-picture-id1178574690?k=20&m=1178574690&s=170667a&w=0&h=6oVVdCzH0_TQatjG-ntctY1NW6t1zy4iL7v_UN5-Fi8=');
+    background-repeat: no-repeat; background-size: cover;
+    text-align: center; width: 100%; height: 200px;">
+      <h1 style="font-size: 50px; font-family: cursive; color: #fff; display: inline-block;"> Welcome To Elson's Profile </h1>
     </div>
+
+    <div class="profile-menu-container">
+      <h2>Profile Content Menu</h2>
+      <ul class="profile-menu-content" style="list-style: none;">
+        <li><a href="#PROFILE_OVERVIEW_SECTION">Profile Overview</a></li>
+        <li><a href="#EDUCATION_CONTENT_SECTION">Education Summary</a></li>
+        <li><a href="#WORK_EXP_SECTION">Work Experience</a></li>
+        <li><a href="#TECH_SKILLS_SECTION">Technical Skills</a></li>
+        <li><a href="#GEN_INTERESTS_SECTION">General Interests</a></li>
+        <li><a href="#MEDIA_SECTION">Media</a></li>
+        <li><a href="#FAV_WEBSITE_SECTION">Favorite Website</a></li>
+        <li><a href="#COURSE_PROJECTS_SECTION">Projects of This Course</a></li>
+      </ul>
+    </div>
+
+    <div class="section profile-overview-container" style="margin-top: 65px;">
+      <h2 id="PROFILE_OVERVIEW_SECTION">Profile Overview</h2>
+      <div class="profile-overview-content">
+        <p style="font-family: cursive; font-size: 18px; display: flex; align-items: center;">
+          <img src="images/profile_pic.png"; width=400px; height=400px; style="margin-left: 25px; margin-right: 15px;"/>
+          Hello there, I'm Elson. I am currently a senior at <span class="flex-inline" style="color:red;">St.John's University</span> majoring in computer science. Over the past few years, I have been working towards my aspirations to become a software engineer. I remember being dead set about working as a back-end engineer, but from my internship experience over the past summer, I have since opened my eyes to the possibilities of working on the front-end as well. So, I'm confident that this course, Web Application Development, will be extremely helpful and interesting.
+        </p>
+      </div>
+    </div>
+
+    <div class="section education-content-container">
+      <h2 id="EDUCATION_CONTENT_SECTION">Education Summary</h2>
+    </div>
+
+    <div class="section work-exp-container">
+      <h2 id="WORK_EXP_SECTION">Work Experience</h2>
+    </div>
+
+    <div class="section tech-skills-container">
+      <h2 id="TECH_SKILLS_SECTION">Technical Skills</h2>
+    </div>
+
+    <div class="section gen-interest-container">
+      <h2 id="GEN_INTERESTS_SECTION">General Interests</h2>
+    </div>
+
+    <div class="section media-container">
+      <h2 id="MEDIA_SECTION">Media</h2>
+      <div class="tabs">
+        <div class="tab">
+          <input type="radio" id="song-tab" name="tab-group" checked>
+          <label for="song-tab">Favorite Song</label>
+          <div class="tab-content">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/pXa48BPQu_4" frameborder="0" allow="accelerometer; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <div class="tab">
+          <input type="radio" id="film-tab" name="tab-group">
+          <label for="film-tab">Favorite Film</label>
+          <div class="tab-content">
+            <p>hello2</p>
+          </div>
+        </div>
+
+        <div class="tab">
+          <input type="radio" id="show-tab" name="tab-group">
+          <label for="show-tab">Favorite Show</label>
+          <div class="tab-content">
+            <p>hello3</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section fav-website-container">
+      <h2 id="FAV_WEBSITE_SECTION">Favorite Website</h2>
+    </div>
+
+    <div class="section course-proj-container">
+      <h2 id="COURSE_PROJECTS_SECTION">Course Projects</h2>
+    </div>
+
   </body>
 </html>
+
+<style>
+  body{
+    padding: 0;
+    margin: 0;
+  }
+
+  h2{
+    font-family: cursive;
+    font-size: 25px;
+    margin-left: 25px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+  }
+
+   li{
+    margin-bottom: 15px;
+  }
+
+  .section{
+    margin-bottom: 50px;
+  }
+
+  .media-container{
+    margin-bottom: 200px;
+  }
+
+  .profile-menu-content{
+    font-family: cursive;
+  }
+
+  span.flex-inline{
+    display: contents;
+  }
+
+  .tabs{
+    position: relative;
+    min-height: 200px;
+    width: 500px;
+    margin-left: 25px;
+  }
+
+  .tab{
+    float: left;
+  }
+
+  .tab label{
+    background: #ddd;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: -1px;
+  }
+
+  .tab:first-child label{
+    margin-left: 0;
+  }
+
+  .tab input[type=radio]{
+    display:none;
+  }
+
+  .tab-content{
+    position: absolute;
+    top: 28px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    padding: 20px;
+    display: none;
+    margin-bottom: 100px;
+  }
+
+  input[type=radio]:checked ~ label{
+    background: white;
+    border-bottom: 1px solid white;
+  }
+
+  input[type=radio]:checked ~ label ~ .tab-content{
+    display: block;
+  }
+
+</style>
