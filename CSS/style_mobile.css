@@ -2,8 +2,8 @@
 
   #avatar-pic {
       position: relative;
-      width: 280px;
-      height: 280px;
+      width: 300px;
+      height: 300px;
   }
 
   .profile-blurb {
@@ -11,18 +11,18 @@
   }
 
   .fav-song-vid {
-    width: 280px;
-    height: 205px;
+    width: 300px;
+    height: 225px;
   }
 
   .fav-film-vid {
-    width: 280px;
-    height: 205px;
+    width: 300px;
+    height: 225px;
   }
 
   .fav-show-vid {
-    width: 280px;
-    height: 205px;
+    width: 300px;
+    height: 225px;
   }
 
 }
