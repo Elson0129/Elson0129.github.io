@@ -25,6 +25,10 @@ a {
   height: 400px;
 }
 
+.profile-blurb{
+  display: flex;
+}
+
 .edu_degrees label {
   font-family: cursive;
   font-size: 16px;

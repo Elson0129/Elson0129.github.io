@@ -1,4 +1,4 @@
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 485px) {
 
   #avatar-pic {
       position: relative;
@@ -8,6 +8,21 @@
 
   .profile-blurb {
     display: block;
+  }
+
+  .fav-song-vid {
+    width: 250px;
+    height: 115px;
+  }
+
+  .fav-film-vid {
+    width: 250px;
+    height: 115px;
+  }
+
+  .fav-show-vid {
+    width: 250px;
+    height: 115px;
   }
 
 }
