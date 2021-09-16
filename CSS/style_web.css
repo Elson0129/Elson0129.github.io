@@ -2,6 +2,7 @@ body {
   padding: 0;
   margin: 0;
   width: 100%;
+  background-color: #fafbfb;
 }
 
 h2 {
@@ -90,4 +91,15 @@ span.flex-inline {
 .fav-show-vid {
   width: 560px;
   height: 315px;
+}
+
+@media print{
+
+  .tech-skills-table th {
+    background-color: #beedf3;
+  }
+
+  .tech-skills-table {
+    margin-top: 15px;
+  }
 }
