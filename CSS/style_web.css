@@ -72,3 +72,18 @@ a {
 span.flex-inline {
   display: contents;
 }
+
+.fav-song-vid {
+  width: 560px;
+  height: 315px;
+}
+
+.fav-film-vid {
+  width: 560px;
+  height: 315px;
+}
+
+.fav-show-vid {
+  width: 560px;
+  height: 315px;
+}
