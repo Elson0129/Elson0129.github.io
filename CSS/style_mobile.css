@@ -1,0 +1,28 @@
+@media only screen and (max-width: 480px) {
+
+  #avatar-pic {
+      position: relative;
+      width: 280px;
+      height: 280px;
+  }
+
+  .profile-blurb {
+    display: block;
+  }
+
+  .fav-song-vid {
+    width: 280px;
+    height: 205px;
+  }
+
+  .fav-film-vid {
+    width: 280px;
+    height: 205px;
+  }
+
+  .fav-show-vid {
+    width: 280px;
+    height: 205px;
+  }
+
+}
