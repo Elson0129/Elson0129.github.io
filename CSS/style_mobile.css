@@ -1,8 +1,13 @@
-@media(max-width: 600px;) {
+@media screen and (max-width: 480px;) {
 
   #avatar-pic {
       position: relative;
       width: 200px;
       height: 200px;
   }
+
+  .profile-blurb {
+    display: block;
+  }
+
 }
