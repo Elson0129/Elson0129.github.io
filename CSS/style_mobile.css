@@ -1,4 +1,4 @@
-@media screen and (max-width: 485px) {
+@media only screen and (max-width: 480px) {
 
   #avatar-pic {
       position: relative;
