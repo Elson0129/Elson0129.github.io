@@ -1,9 +1,8 @@
 @media(max-width: 600px;) {
 
-
-
   #avatar-pic {
-      width: auto;
-      height: auto;
+      position: relative;
+      width: 200px;
+      height: 200px;
   }
 }
