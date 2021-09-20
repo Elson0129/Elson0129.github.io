@@ -3,60 +3,154 @@
     <title>Elson's Profile</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="CSS/style_web.css">
     <link rel="stylesheet" media="only screen and (max-width: 480px)" href="CSS/style_mobile.css">
   </head>
   <body>
 
-    <div class="heading-container" style="background: url('https://media.istockphoto.com/photos/blue-sky-and-white-clouds-picture-id1178574690?k=20&m=1178574690&s=170667a&w=0&h=6oVVdCzH0_TQatjG-ntctY1NW6t1zy4iL7v_UN5-Fi8=');
+    <div class="container-fluid heading-container" style="background: url('https://media.istockphoto.com/photos/blue-sky-and-white-clouds-picture-id1178574690?k=20&m=1178574690&s=170667a&w=0&h=6oVVdCzH0_TQatjG-ntctY1NW6t1zy4iL7v_UN5-Fi8=');
     background-repeat: no-repeat; background-size: cover;
     text-align: center; width: 100%; height: 200px;">
-      <h1 style="font-size: 50px; font-family: cursive; color: #fff; display: inline-block;"> Welcome To Elson's Profile </h1>
-    </div>
-
-    <div class="profile-menu-container">
-      <h2>Profile Content Menu</h2>
-      <ul id="profile-menu-selector" class="profile-menu-content" style="list-style: none;">
-        <li><a href="#PROFILE_OVERVIEW_SECTION">Profile Overview</a></li>
-        <li><a href="#EDUCATION_CONTENT_SECTION">Education Summary</a></li>
-        <li><a href="#WORK_EXP_SECTION">Work Experience</a></li>
-        <li><a href="#TECH_SKILLS_SECTION">Technical Skills</a></li>
-        <li><a href="#GEN_INTERESTS_SECTION">General Interests</a></li>
-        <li><a href="#MEDIA_SECTION">Media</a></li>
-        <li><a href="#FAV_WEBSITE_SECTION">Favorite Website</a></li>
-        <li><a href="#COURSE_PROJECTS_SECTION">Projects of This Course</a></li>
-      </ul>
-    </div>
-
-    <div class="section profile-overview-container" style="margin-top: 65px;">
-      <h2 id="PROFILE_OVERVIEW_SECTION">Profile Overview</h2>
-      <div class="profile-overview-content">
-        <p class="profile-blurb" style="font-family: cursive; font-size: 18px; align-items: center;">
-          <img id="avatar-pic" src="images/profile_pic.png" style="margin-left: 25px; margin-right: 15px;"/>
-          Hello there, I'm Elson. I am currently a senior at <span class="flex-inline" style="color:red;">St.John's University</span> majoring in computer science. Over the past few years, I have been working towards my aspirations to become a software engineer. I remember being dead set about working as a back-end engineer, but from my internship experience over the past summer, I have since opened my eyes to the possibilities of working on the front-end as well. So, I'm confident that this course, Web Application Development, will be extremely helpful and interesting.
-        </p>
+      <div class="container-fluid heading-text-container" style="text-align: center; display: flex; justify-content: center; align-items: center;">
+        <h1 style="font-size: 50px; font-family: cursive; color: #fff;"> Welcome To Elson's Profile </h1>
       </div>
     </div>
 
-    <div class="section education-content-container">
+    <div class="row profile-menu-container">
+      <h2>Profile Content Menu</h2>
+      <div class="col-xl-12 profile-menu-content">
+        <ul id="profile-menu-selector" class="profile-menu-list" style="list-style: none;">
+          <div class="menu-button-container">
+            <li>
+              <a href="#PROFILE_OVERVIEW_SECTION">
+                <button class="button-content prof-overview-btn">
+                  Profile Overview
+                </button>
+              </a>
+            </li>
+          </div>
+
+          <div class="menu-button-container">
+            <li>
+              <a href="#EDUCATION_CONTENT_SECTION">
+                <button class="button-content edu-btn">
+                  Education Summary
+                </button>
+              </a>
+            </li>
+          </div>
+
+          <div class="menu-button-container">
+            <li>
+              <a href="#WORK_EXP_SECTION">
+                <button class="button-content work-exp-btn">
+                  Work Experience
+                </button>
+              </a>
+            </li>
+          </div>
+
+          <div class="menu-button-container">
+            <li>
+              <a href="#TECH_SKILLS_SECTION">
+                <button class="button-content tech-skills-btn">
+                  Technical Skills
+                </button>
+              </a>
+            </li>
+          </div>
+
+          <div class="menu-button-container">
+            <li>
+              <a href="#GEN_INTERESTS_SECTION">
+                <button class="button-content gen-interest-btn">
+                  General Interests
+                </button>
+              </a>
+            </li>
+          </div>
+
+          <div class="menu-button-container">
+            <li>
+              <a href="#MEDIA_SECTION">
+                <button class="button-content media-btn">
+                  Media
+                </button
+              </a>
+            </li>
+          </div>
+
+          <div class="menu-button-container">
+            <li>
+              <a href="#FAV_WEBSITE_SECTION">
+                <button class="button-content fav-website-btn">
+                  Favorite Website
+                </button>
+              </a>
+            </li>
+          </div>
+
+          <div class="menu-button-container">
+            <li>
+              <a href="#COURSE_PROJECTS_SECTION">
+                <button class="button-content course-proj-btn">
+                  Projects of This Course
+                </button>
+              </a>
+            </li>
+          </div>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section container-fluid profile-overview-container" style="margin-top: 65px;">
+      <h2 id="PROFILE_OVERVIEW_SECTION">Profile Overview</h2>
+      <div class="row profile-overview-content">
+        <div class="col-xl-4 profile-image">
+          <img id="avatar-pic" class="rounded" src="images/profile_pic.png" style="margin-left: 25px; margin-right: 15px;"/>
+        </div>
+        <div class="col-xl-8 profile-blurb">
+          <p class="profile-blurb" style="margin-top: 15px; font-family: cursive; font-size: 18px; align-items: center;">
+             Hello there, I'm Elson. I am currently a senior at <span class="flex-inline" style="color:red;">St.John's University</span> majoring in computer science. Over the past few years, I have been working towards my aspirations to become a software engineer. I remember being dead set about working as a back-end engineer, but from my internship experience over the past summer, I have since opened my eyes to the possibilities of working on the front-end as well. So, I'm confident that this course, Web Application Development, will be extremely helpful and interesting.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section container-fluid education-content-container">
       <h2 id="EDUCATION_CONTENT_SECTION">Education Summary</h2>
       <p style="font-family: cursive; font-size: 18px; margin-left: 25px;">Before St. John's University, I attended Rachel Carson High School For Coastal Studies in Brooklyn, New York. It wasn't until my junior year of highschool when I realized that I had an interest in computer science.
         After graduating in 2018, I attended St. John's University and studied computer science for more than 3 years, which brings me to where I am now.
       </p>
       <h3 style="font-family: cursive; margin-left: 25px; text-decoration: underline;">Degrees (Completed/In-Progress)</h3>
       <form class="edu_degrees" style="margin-left: 25px;">
-        <input type="checkbox" name="hs_diploma" value="Highschool_Diploma" checked>
-        <label for="hs_diploma">Highschool Diploma</label><br>
-        <input type="checkbox" name="bach_degree" value="Bachelor's_Degree" checked>
-        <label for="bach_degree">Bachelor's Degree</label><br>
-        <input type="checkbox" name="mas_degree" value="Master's_Degree">
-        <label for="mas_degree">Master's Degree</label><br>
-        <input type="checkbox" name="doctorate" value="Doctorate">
-        <label for="doctorate">Doctorate</label><br>
+        <div class="custom-control custom-checkbox mb-3">
+          <input type="checkbox" class="custom-control-input" id="hs_diploma" name="checkbox1" checked>
+          <label class="custom-control-label" for="hs_diploma">Highschool Diploma</label>
+        </div>
+
+        <div class="custom-control custom-checkbox mb-3">
+          <input type="checkbox" class="custom-control-input" id="bach_degree" name="checkbox1" checked>
+          <label class="custom-control-label" for="bach_degree">Bachelor's Degree</label>
+        </div>
+
+        <div class="custom-control custom-checkbox mb-3">
+          <input type="checkbox" class="custom-control-input" id="master_degree" name="checkbox1">
+          <label class="custom-control-label" for="master_degree">Master's Degree</label>
+        </div>
+
+        <div class="custom-control custom-checkbox mb-3">
+          <input type="checkbox" class="custom-control-input" id="doctorate" name="checkbox1">
+          <label class="custom-control-label" for="doctorate">Doctorate</label>
+        </div>
       </form>
     </div>
 
-    <div class="section work-exp-container">
+    <div class="section container-fluid work-exp-container">
       <h2 id="WORK_EXP_SECTION">Work Experience</h2>
       <ul class="work-exp-list">
         <li>Office Assistant at private apparel company (Summer 2015 - 3 months)</li>
@@ -69,9 +163,9 @@
       </ul>
     </div>
 
-    <div class="section tech-skills-container">
+    <div class="section container-fluid tech-skills-container">
       <h2 id="TECH_SKILLS_SECTION">Technical Skills</h2>
-      <table class="tech-skills-table" style="margin-left: 25px;">
+      <table class="table table-hover tech-skills-table" style="margin-left: 25px;">
         <tr>
           <th>Proficient</th>
           <th>Familiar</th>
@@ -96,41 +190,47 @@
       </table>
     </div>
 
-    <div class="section gen-interest-container">
+    <div class="section container-fluid gen-interest-container">
       <h2 id="GEN_INTERESTS_SECTION">General Interests</h2>
       <p style="font-family: cursive; font-size: 18px; margin-left: 25px;">Usually during my free time, I like to go out: go to the park with my dog, go out to places with my friends. But Covid-19 has slammed the brakes on all of that. So during the pandemic, I have gained interest in, if not started spending more time on, cooking, playing video games, watching TV shows/movies and reading up on upcoming technologies. </p>
     </div>
 
-    <div class="section media-container">
+    <div class="container-fluid section media-section-container">
       <h2 id="MEDIA_SECTION">Media</h2>
-      <div class="tabs">
-        <div class="tab">
-          <input type="radio" id="song-tab" name="tab-group" checked>
-          <label for="song-tab">Favorite Song</label>
-          <div class="tab-content">
-            <iframe class="fav-song-vid" src="https://www.youtube.com/embed/pXa48BPQu_4" frameborder="0" allow="accelerometer; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <br>
+      <div class="tab-container">
+        <ul class="nav nav-tabs list-unstyled" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#song">
+              Favorite Song
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#film">
+              Favorite Film
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#show">
+              Favorite Show
+            </a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div id="song" role="tabpanel" class="tab-pane active"><br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wtniI4NTvnQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-        </div>
-
-        <div class="tab">
-          <input type="radio" id="film-tab" name="tab-group">
-          <label for="film-tab">Favorite Film</label>
-          <div class="tab-content">
+          <div id="film" role="tabpanel" class="tab-pane fade"><br>
             <iframe class="fav-film-vid" width="560" height="315" src="https://www.youtube.com/embed/2ilzidi_J8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-        </div>
-
-        <div class="tab">
-          <input type="radio" id="show-tab" name="tab-group">
-          <label for="show-tab">Favorite Show</label>
-          <div class="tab-content">
+          <div id="show" role="tabpanel" class="tab-pane fade"><br>
             <iframe class="fav-show-vid" width="560" height="315" src="https://www.youtube.com/embed/WiIdL-z899I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="section fav-website-container">
+    <div class="section container-fluid fav-website-container">
       <h2 id="FAV_WEBSITE_SECTION">Favorite Websites</h2>
       <ul class="fav-website-list" style="list-style: none;">
         <li><a href="https://www.google.com/" target="_blank" rel="noopener noreferrer"><h3 style="font-family: cursive; font-size: 18px;">This is my "best friend"- Whenever I want to know something, this site always has all the right answers </h3></a></li>
@@ -139,7 +239,7 @@
       </ul>
     </div>
 
-    <div class="section course-proj-container">
+    <div class="section container-fluid course-proj-container">
       <h2 id="COURSE_PROJECTS_SECTION">Course Projects</h2>
       <a href="https://elson0129.github.io/" target="_blank" rel="noopener noreferrer"><h3 style="font-family: cursive; font-size: 18px; margin-left:25px;">Project 1: Profile Page</h3></a>
     </div>
@@ -148,52 +248,64 @@
 </html>
 
 <style>
-  .tabs {
+  .tab-container{
+    text-align: center;
+  }
+
+  .nav-tabs {
     position: relative;
-    min-height: 200px;
-    width: 500px;
-    margin-left: 25px;
+    width: 100%;
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 0 40px;
   }
 
-  .tab {
-    float: left;
-  }
-
-  .tab label {
-    background: #ddd;
-    padding: 10px;
-    cursor: pointer;
-    margin-left: -1px;
+  .nav-tabs .nav-link{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    padding: 12px 20px;
+    border-top: solid 1px #DCDCDD;
+    border-bottom: solid 1px #DCDCDD;
+    color: #000;
+    filter: drop-shadow(0 0 5px #DCDCDD);
     font-family: cursive;
-    font-size: 18px;
+    border-radius: 0;
   }
 
-  .tab:first-child label {
-    margin-left: 0;
-  }
-
-  .tab input[type=radio] {
-    display:none;
+  .nav-tabs:after {
+    border-bottom: 1px solid #DCDCDD;
+    position: absolute;
+    width: 100px;
+    left: 0;
+    top: 50%;
+    z-index: 0;
   }
 
   .tab-content {
-    position: absolute;
-    top: 28px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: white;
-    padding: 20px;
-    display: none;
-    margin-bottom: 100px;
-  }
-
-  input[type=radio]:checked ~ label {
-    background: white;
-    border-bottom: 1px solid white;
-  }
-
-  input[type=radio]:checked ~ label ~ .tab-content {
     display: block;
+    padding 20px 0;
   }
+
+  .nav-tabs .nav-link.active {
+    position: relative;
+    display: inline-block;
+    padding: 14px 24px;
+    font-size: 18px;
+    background: #1E90FF;
+    color: #fff;
+  }
+
+  .nav-item:first-child .nav-link {
+    border-left: 1px solid #DCDCDD;
+  }
+
+  .nav-item:last-child .nav-link {
+    border-right: 1px solid #DCDCDD;
+  }
+
 </style>

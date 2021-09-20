@@ -7,7 +7,7 @@ body {
 
 h2 {
   font-family: cursive;
-  font-size: 25px;
+  font-size: 35px;
   margin-left: 25px;
   margin-bottom: 30px;
   text-decoration: underline;
@@ -19,6 +19,50 @@ h2 {
 
 a {
   color: black;
+}
+
+.button-content {
+  border: none;
+  color: white;
+  padding: 17px 25px;
+  transition-duration: 0.3s;
+}
+
+.button-content:hover {
+  background: #A9A9A9;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.prof-overview-btn {
+  background: #6495ED;
+}
+
+.edu-btn {
+  background: #8FBC8F;
+}
+
+.work-exp-btn {
+  background: #DEB887;
+}
+
+.tech-skills-btn {
+  background: #B8860B;
+}
+
+.gen-interest-btn {
+  background: #2F4F4F;
+}
+
+.media-btn {
+  background: #800000;
+}
+
+.fav-website-btn {
+  background: #8B008B;
+}
+
+.course-proj-btn {
+  background: #228B22;
 }
 
 #avatar-pic{
@@ -44,13 +88,25 @@ a {
   margin-bottom: 200px;
 }
 
+.profile-menu-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-menu-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #profile-menu-selector {
   font-family: cursive;
 }
 
 .tech-skills-table {
   width: 95%;
-  border-collapse: collapse;
 }
 
 .tech-skills-table tr, .tech-skills-table td, .tech-skills-table th {
@@ -62,11 +118,11 @@ a {
 }
 
 .tech-skills-table th {
-  background-color: #ddd;
+  background-color: #1E90FF;
+  color: #fff;
 }
 
 .tech-skills-table td, .tech-skills-table th {
-  border: 1px solid #ddd;
   padding: 8px;
 }
 
