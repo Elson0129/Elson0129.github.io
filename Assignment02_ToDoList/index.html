@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/taskScript.js"></script>
+  </head>
+
+  <body style="
+  background: url('images/empty-blackboard.jpg');
+  background-repeat: no-repeat; background-size: cover;">
+    <div class="container-fluid">
+      <h1 style="font-size: 35px; display: flex; justify-content: center; text-align: center; text-decoration: underline;">My To-Do List</h1>
+
+      <ul style="display: flex; flex-direction: column; justify-content: center; font-size: 22px;" id="tasks-list">
+      </ul>
+
+      <h3>Add a New Task</h3>
+      <form id="new-task-form">
+        <input id="task" type="text" placeholder="New Task"><br>
+
+        <label style="margin-top: 15px;" for="task-status">Task Status:</label>
+        <input style="margin-left: 10px;" class="task-status" id="task-status" name="task-status" type="radio" value="in-progress"> In-Progress </input>
+        <input class="task-status" id="task-status" name="task-status" type="radio" value="completed"> Completed </input><br>
+
+        <label for="task-priority">Priority:</label>
+        <select id="task-priority" name="task-priority">
+          <option value="high">High</option>
+          <option value="medium">Medium</option>
+          <option value="low">Low</option>
+
+        <input style="margin-left: 10px;" id="submit" type="submit">
+      </form>
+    </div>
+  </body>
+</html>

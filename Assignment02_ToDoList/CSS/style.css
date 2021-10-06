@@ -1,0 +1,37 @@
+@import url(https://fonts.googleapis.com/css?family=Walter+Turncoat);
+body {
+  color: #E8E8E8;
+  font-family: "Walter Turncoat", cursive;
+}
+
+.complete-task-btn {
+  border: 2px solid #E8E8E8;
+  background: url('images/empty-blackboard.jpg');
+  color: #E8E8E8;
+  transition-duration: 0.3s;
+}
+
+.complete-task-btn:hover {
+  background-color: #E8E8E8;
+  color: black;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.remove-task-btn {
+  border: 2px solid #E8E8E8;
+  background: url('images/empty-blackboard.jpg');
+  color: #E8E8E8;
+  transition-duration: 0.3s;
+}
+
+.remove-task-btn:hover {
+  background-color: #E8E8E8;
+  color: black;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+li {
+  text-align: center;
+  margin-top: 10px;
+  list-style-type: decimal;
+}
