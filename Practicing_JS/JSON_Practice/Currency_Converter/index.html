@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="JS/currency_script.js"></script>
+  </head>
+
+  <body>
+      <h3>Simple Currency Converter</h3>
+      <form id="currency_form">
+        <label>The converter currently only supports AUD, CAD, CHF, EUR, & USD</label><br>
+        <input id="amount" autocomplete="off" autofocus placeholder="Amount" type="text"><br>
+        <label for="base_currency">Base Currency:</label>
+        <input id="base_currency" autocomplete="off" autofocus placeholder="EUR" type="text">
+        <br>
+        <label for="to_currency">Target Currency:</label>
+        <input id="to_currency" autocomplete="off" autofocus placeholder="USD" type="text">
+        <br>
+        <input type="submit" value="Convert">
+      </form>
+      <br>
+      <div id="result"></div>
+  </body>
+</html>
